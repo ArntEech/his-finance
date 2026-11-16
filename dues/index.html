@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HIS Theatre · My Dues</title>
+<meta name="description" content="Check your HIS Theatre Ministry dues.">
+<meta name="theme-color" content="#f2b62a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HIS Dues">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="../shell.css">
+<style>:root{--bg:#fbf8f1;--fg:#2c2a27;--accent:#f2b62a;--on-accent:#2a2000}</style>
+</head>
+<body>
+<div id="install" hidden><span id="installText"></span><button id="installBtn" type="button" hidden>Install</button><button id="installX" class="x" type="button" aria-label="Dismiss">×</button></div>
+<iframe id="frame" title="HIS Theatre · My Dues" allow="clipboard-write"></iframe>
+<div id="splash">
+  <img src="../logo.png" alt="HIS Theatre Ministry logo">
+  <h1>HIS Theatre · My Dues</h1>
+  <p>Check your dues any time.</p>
+  <div class="dots" id="dots"><i></i><i></i><i></i></div>
+  <p id="msg">Loading…</p>
+  <button id="retry" type="button" hidden>Try again</button>
+</div>
+<script>window.HIS_APP = { name: "HIS Dues", query: "" };</script>
+<script src="../config.js"></script>
+<script src="../shell.js"></script>
+</body>
+</html>
