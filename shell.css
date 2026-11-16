@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg)}
+body{display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+iframe{flex:1;width:100%;border:0;background:#fbf8f1;min-height:0}
+#splash{position:fixed;inset:0;z-index:5;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px;transition:opacity .35s}
+#splash.gone{opacity:0;pointer-events:none}
+#splash img{width:120px;height:auto;filter:drop-shadow(0 10px 20px rgba(0,0,0,.3))}
+#splash h1{font-family:Georgia,"Times New Roman",serif;font-size:1.7rem;margin:0}
+#splash p{margin:0;opacity:.8;font-size:.95rem;max-width:300px;line-height:1.45}
+.dots{display:flex;gap:6px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:b 1s infinite alternate}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes b{from{opacity:.25;transform:translateY(0)}to{opacity:1;transform:translateY(-5px)}}
+button{font:inherit;font-weight:700;border:0;border-radius:12px;padding:11px 20px;background:var(--accent);color:var(--on-accent);cursor:pointer}
+#install{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#343434;color:#fff;font-size:.86rem;line-height:1.35;border-bottom:3px solid #f2b62a}
+#install[hidden],#retry[hidden],.dots[hidden]{display:none}
+#install span{flex:1}
+#install button{padding:7px 14px;background:#f2b62a;color:#2a2000;border-radius:10px;white-space:nowrap}
+#install .x{background:transparent;color:#cfc5b3;padding:4px 8px;font-size:1.1rem}
+@media (prefers-reduced-motion:reduce){.dots i{animation:none}}
