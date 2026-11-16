@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HIS Finance Desk</title>
+<meta name="description" content="Record dues, spending and handovers for HIS Theatre Ministry.">
+<meta name="theme-color" content="#343434">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HIS Finance">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="../shell.css">
+<style>:root{--bg:#343434;--fg:#ffffff;--accent:#f2b62a;--on-accent:#2a2000}</style>
+</head>
+<body>
+<div id="install" hidden><span id="installText"></span><button id="installBtn" type="button" hidden>Install</button><button id="installX" class="x" type="button" aria-label="Dismiss">×</button></div>
+<iframe id="frame" title="HIS Finance Desk" allow="clipboard-write"></iframe>
+<div id="splash">
+  <img src="../logo.png" alt="HIS Theatre Ministry logo">
+  <h1>HIS Finance Desk</h1>
+  <p>For the Financial Secretary and Treasurer.</p>
+  <div class="dots" id="dots"><i></i><i></i><i></i></div>
+  <p id="msg">Loading…</p>
+  <button id="retry" type="button" hidden>Try again</button>
+</div>
+<script>window.HIS_APP = { name: "HIS Finance", query: "?p=officer" };</script>
+<script src="../config.js"></script>
+<script src="../shell.js"></script>
+</body>
+</html>
